@@ -2,12 +2,12 @@ const { wizards } = require("../models/index.js");
 
 exports.createWizard = (req, res) => {
   // Validação do request
-  if (!req.body.title) {
-    res.status(400).send({
-      message: "Content can not be empty!",
-    });
-    return;
-  }
+  // if (!req.body.title) {
+  //   res.status(400).send({
+  //     message: "Content can not be empty!",
+  //   });
+  //   return;
+  // }
   // Criar o usuário
   const wizard = {
     id: req.body.id,
@@ -31,7 +31,7 @@ exports.createWizard = (req, res) => {
 };
 
 exports.findAll = (req, res) => {
-  wizards
+  wizards 
     .findAll()
     .then((data) => {
       res.send(data);
