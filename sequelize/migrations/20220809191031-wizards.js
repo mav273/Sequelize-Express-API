@@ -6,24 +6,23 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
-        autoIncrement: true
       },
       name: {
         type: Sequelize.STRING(30),
-        allowNull: false
+        allowNull: false,
       },
-      knowHow:{
+      knowHow: {
         type: Sequelize.BOOLEAN,
-        allowNull: true
+        allowNull: true,
       },
-      corporeal_id:{
+      corporeal_id: {
         type: Sequelize.INTEGER,
-        allowNull: true
+        allowNull: true,
       },
-      createdAt:{
+      createdAt: {
         type: Sequelize.DATE,
-        allowNull:true
-      }
+        allowNull: true,
+      },
     });
   },
 

@@ -6,17 +6,21 @@ module.exports = {
       "patronuses",
       [
         {
+          id: 1,
           animal: "Deer",
         },
         {
+          id: 2,
           animal: "Phoenix",
         },
         {
+          id: 3,
           animal: "Cat",
         },
         {
+          id:4,
           animal: "Wolf",
-        }
+        },
       ],
       {}
     );

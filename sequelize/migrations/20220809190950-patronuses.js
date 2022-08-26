@@ -6,12 +6,11 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
-        autoIncrement: true
       },
       animal: {
         type: Sequelize.STRING(30),
-        allowNull: false
-      }
+        allowNull: false,
+      },
     });
   },
 

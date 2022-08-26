@@ -25,10 +25,10 @@ module.exports = (sequelize, DataTypes) => {
         type: Sequelize.INTEGER,
         allowNull: true,
       },
-      createdAt:{
+      createdAt: {
         field: "createdAt",
         type: Sequelize.DATE,
-        allowNull:true
+        allowNull: true,
       },
     },
     {

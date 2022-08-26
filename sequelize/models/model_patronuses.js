@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
         type: Sequelize.INTEGER,
         primaryKey: true,
       },
-      name: {
-        field: "name",
+      animal: {
+        field: "animal",
         type: Sequelize.STRING(30),
         allowNull: false,
       },

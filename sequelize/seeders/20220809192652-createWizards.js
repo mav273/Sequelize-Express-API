@@ -6,21 +6,24 @@ module.exports = {
       "wizards",
       [
         {
+          id: 1,
           name: "Harry",
           knowHow: true,
           corporeal_id: 1,
-          createdAt: '1994-08-25'
+          createdAt: "1994-08-25",
         },
         {
+          id: 2,
           name: "Snape",
           knowHow: true,
           corporeal_id: 1,
         },
         {
+          id: 3,
           name: "Albus Dumbledore",
           knowHow: true,
           corporeal_id: 2,
-        }
+        },
       ],
       {}
     );
