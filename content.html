@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="scripts.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <input type="button" value="Sair" onclick="location.href='index.html'">
+        <select name="crud" id="crud">
+            <option value="volvo">Criar</option>
+            <option value="saab">Consultar</option>
+            <option value="opel">Atualizar</option>
+            <option value="audi">Deletar</option>
+        </select>
+        <button onclick="mostrar()">Confirmar</button>
+    </header>
+
+
+    <div class="criar" style="visibility: hidden" id = "opccriar">
+        <p>dasd</p>
+    </div>
+    <div class="consultar" style="visibility: hidden;" id = "opcconsultar">
+        <select name="consultar" style="visibility: hidden;" id="deletar"></select>
+    </div>
+    <div class="atualizar" style="visibility: hidden;" id = "opcatualizar">
+        <select name="deletar" style="visibility: hidden;" id="deletar"></select>
+    </div>
+    <div class="deletar" style="visibility: hidden;" id = "opcdeletar">
+        <select name="deletar"  id="deletar"></select>
+    </div>
+
+</body>
+</html>

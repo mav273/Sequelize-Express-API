@@ -2,8 +2,8 @@
 const Sequelize = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
-  const wizards = sequelize.define(
-    "wizards",
+  const users = sequelize.define(
+    "users",
     {
       id: {
         field: "id",
@@ -12,31 +12,21 @@ module.exports = (sequelize, DataTypes) => {
       },
       name: {
         field: "name",
-        type: Sequelize.STRING(30),
+        type: Sequelize.STRING(50),
         allowNull: false,
       },
-      knowHow: {
-        field: "knowHow",
-        type: Sequelize.BOOLEAN,
-        allowNull: true,
-      },
-      corporeal_id: {
-        field: "corporeal_id",
-        type: Sequelize.INTEGER,
-        allowNull: true,
-      },
-      createdAt: {
-        field: "createdAt",
-        type: Sequelize.DATE,
-        allowNull: true,
+      senha: {
+        field: "senha",
+        type: Sequelize.STRING(50),
+        allowNull: false,
       },
     },
     {
       timestamps: false,
-      tableName: "wizards",
+      tableName: "users",
     }
   );
 
-  wizards.associate = function (models) {};
-  return wizards;
+  users.associate = function (models) {};
+  return users;
 };
